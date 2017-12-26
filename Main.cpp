@@ -31,7 +31,7 @@ int main(){
 		}
 		for(int t=0; t<NUM_THREADS; t++){
 			tempInt = threads[t].get();
-			if(tempInt != 0){
+			if(!tempInt){
 				cout << tempInt << endl;
 			}
 		}
